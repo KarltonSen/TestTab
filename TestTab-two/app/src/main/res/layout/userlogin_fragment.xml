@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:layout_below="@+id/txtUserName"
+        android:layout_marginTop="574dp"
+        android:text="Login" />
+
+    <EditText
+        android:id="@+id/txtUserName"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="***Username***"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtEmailInfo"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/txtUserName"
+        android:layout_marginTop="97dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/txtPassword"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:layout_below="@+id/txtUserName"
+        android:layout_marginTop="18dp"
+        android:ems="10"
+        android:hint="***Password***"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/txtPromptChoice"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:layout_below="@+id/txtEmailInfo"
+        android:layout_marginTop="93dp"
+        android:background="#F2011CA2"
+        android:text="Select if you wish to join the Payed Service or the Volunteer Service. If you want to work/volunteer under a company please select the Company Tab"
+        android:textColor="#FCFCFC"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <CheckBox
+        android:id="@+id/chkPayedService"
+        android:layout_width="142dp"
+        android:layout_height="66dp"
+        android:layout_below="@+id/txtPromptChoice"
+        android:layout_marginTop="34dp"
+        android:text="Payed Service" />
+
+    <CheckBox
+        android:id="@+id/chkVolunteerService"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_below="@+id/chkPayedService"
+        android:layout_marginTop="29dp"
+        android:text="Volunteer Service" />
+
+    <EditText
+        android:id="@+id/txtPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtEmailInfo"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Enter Phone Number"
+        android:inputType="phone" />
+
+
+</RelativeLayout>
